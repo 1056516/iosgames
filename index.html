@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayerVPN</title>
+    <style>
+        body {
+            background: url('path/to/glitch-art-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Courier New', Courier, monospace;
+            color: #fff;
+            text-align: center;
+        }
+        .controller {
+            position: relative;
+            margin: 50px auto;
+            width: 200px;
+            height: 200px;
+            background: url('path/to/controller-image.png') no-repeat center center;
+            background-size: contain;
+        }
+        .neon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 5px solid;
+            border-color: pink blue;
+            animation: neon-glow 1.5s infinite alternate;
+        }
+        @keyframes neon-glow {
+            from {
+                box-shadow: 0 0 10px pink, 0 0 20px blue;
+            }
+            to {
+                box-shadow: 0 0 20px pink, 0 0 40px blue;
+            }
+        }
+        .search-bar {
+            margin-top: 20px;
+        }
+        .search-bar input {
+            width: 80%;
+            padding: 10px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="controller">
+        <div class="neon"></div>
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Your PlayerVPN query awaits...">
+    </div>
+    <script src="/playervpn/uv.client.js"></script>
+</body>
+</html>
