@@ -40,13 +40,26 @@
         }
         .search-bar {
             margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .search-bar input {
-            width: 80%;
+            width: 60%;
             padding: 10px;
             font-size: 1.2em;
             border: none;
             border-radius: 5px;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            margin-left: 10px;
+            cursor: pointer;
+            background-color: #ff007f;
+            color: #fff;
         }
     </style>
 </head>
@@ -56,6 +69,7 @@
     </div>
     <div class="search-bar">
         <input type="text" placeholder="Your PlayerVPN query awaits...">
+        <button>Search</button>
     </div>
     <script src="/playervpn/uv.client.js"></script>
 </body>
